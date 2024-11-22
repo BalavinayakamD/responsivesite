@@ -10,29 +10,75 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>nQode</title>
   </head>
   <body>
-    <div class="container ml-20 mr-20">
-      <img
-        src="./res/logo.svg"
-        alt="logo"
-        class="w-32 h-28 float-start mb-10"
-      />
-      <div class="navbar sticky">
-        <nav class="flex font-semibold text-2xl gap-8 justify-end p-1">
-          <a>Services <i class="fa-solid fa-angle-down gray-500"></i></a>
-          <a>Who we are <i class="fa-solid fa-angle-down"></i></a>
-          <a>Case studies</a>
-          <button id="contact" class="bg-lime-400 rounded-3xl p-2">
+     <div class="container ml-20 mr-20">
+      <div class="topBox justify-between flex">
+        <div class="logo">
+          <img
+      src="./res/logo.svg"
+      alt="logo"
+      class="w-32 h-28 float-start mb-10 "
+             />
+      </div>
+        <nav class="flex font-semibold text-2xl gap-8 justify-end navbar p-2">
+          <a>Services <i class="fa-solid fa-angle-down gray-500 service"></i></a>
+          <a>Who we are <i class="fa-solid fa-angle-down who"></i></a>
+          <a class="casestudy">Case studies</a>
+          <button class="bg-lime-400 rounded-3xl p-2 h-fit contact">
             Contact
           </button>
         </nav>
       </div>
-      <div class="content mt-36">
-        <h1 class="text-9xl font-bold font-sans">CASE STUDIES</h1>
-        <div class="actualConent"></div>
+      <div class="content mt-15 text-center">
+        <h1 class="text-9xl font-bold font-sans case">CASE STUDIES</h1>
+        <div class="actualConent flex">
+            <div class="manOnCycle overflow-hidden basis-1/2 relative ">
+                <img src="res/manoncycle.jpg" alt="man on cycle" id="cycleMan">
+            </div>
+            <div class="text1 basis-1/2 text-left p-10">
+                <div class="bg-cyan-300 text-blue-800 rounded-3xl w-fit product-design">Production Design</div>
+                <h3 class="text-3xl">Empowering Access to Fresh Produce: Building a Mobile App for Source.ag</h3> 
+                    <p>Source ag is an Amsterdam-based agtech startup that is revolutionizing access to fresh produce using cutting-edge Al-powered greenhouses. By enabling efficient operations for growers through pioneering..
+                </p>
+            </div>
+        </div>
+        <div class="flex content2">
+            <div class="text2 text-pretty text-left p-10 basis-1/2 bg-green-950 flex-wrap">
+                <div class="bg-blue-800 text-cyan-400 rounded-3xl w-fit product-design ">Product Design</div>
+                <h3 class="text-3xl">Streamline remote hiring with Pangea.ai's marketplace</h3>
+                <p>Struggling to find the perfect software development partner? Pangea al cuts through the noise.
+                    The platform connects businesses with elite development firms, ensuring a perfect match for your project.</p>
+            </div>
+            <div class="blueglass overflow-hidden basis-1/2 relative">
+                <img src="res/BlueGlass.jpg" alt="blueGlassImage" id="glassImg">
+            </div>
+        </div>
+        <div class="flex content3">
+            <div class="woman overflow-hidden basis-1/2 relative">
+                <img src="res/blackwhitewoman.png" alt="Woman image" id="bnww">
+            </div>
+            <div class="text3 text-pretty basis-1/2 text-left p-10 bg-orange-300">
+                <div class="bg-cyan-300 text-blue-600 w-fit product-design rounded-3xl">Production Design</div>
+                <h3 class="text-3xl">Java SDK for Security- Sensitive Products</h3>
+                <p>The project focused on the development of a specialized and security-sensitive
+                     Java Software Development Kit (SDK). The SDK's primary purpose was to expose APIs for various functions while</p>
+            </div>
+        </div>
+        <div class="flex text-pretty justify-center align-middle text-left content4">
+            <div class="txet4 p-10 basis-1/2 guy">
+                <div class="bg-blue-800 text-cyan-400 rounded-3xl w-fit product-design " >Product Design</div>
+                <h3 class="font-bold text-3xl">SDK Platform Tools</h3>
+                <p class="text-2xl">Struggling to find the perfect software development partner? Pangea al cuts through the noise.
+                    The platform connects businesses with elite development firms, ensuring a perfect match for your project.</p>
+            </div>
+            <div class="flex basis-1/2 overflow-hidden">
+                <img src="res/programer.jpg" alt="Programer image" id="man">
+            </div>
+        </div>
       </div>
     </div>
   </body>
